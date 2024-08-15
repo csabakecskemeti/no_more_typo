@@ -22,11 +22,9 @@ print("""
 ║ ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀            ▀            ▀       ▀            ▀▀▀▀▀▀▀▀▀▀▀   ║
 ║                                                                                                                                              ║
 ║                                                                                                                                              ║
-║  Small utility that uses LLM to fix typos and syntax on the text stored                                                                      ║
-║  in the clipboard.                                                                                                                           ║
+║  Small utility that uses LLM to fix typos and syntax on the text stored in the clipboard.                                                    ║
 ║                                                                                                                                              ║
-║  LLM api_key should be available in the OPENAI_API_KEY environment                                                                           ║
-║  variable.                                                                                                                                   ║
+║  LLM api_key should be available in the OPENAI_API_KEY environment variable.                                                                 ║
 ║                                                                                                                                              ║
 ║  Activate fix: [ctrl]+[shift]+[z]                                                                                                            ║
 ║  Exit app: [ctrl]+[shift]+[x]                                                                                                                ║
