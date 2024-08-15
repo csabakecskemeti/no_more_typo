@@ -8,6 +8,7 @@ Small utility that uses LLM to fix typos and syntax on the text stored in the cl
 
 ### Access and credential
 LLM api_key should be available in the `OPENAI_API_KEY` environment variable.
+
 Also set `OPENAI_API_BASE` if needed
 
 ## Run
@@ -15,4 +16,5 @@ I suggest to run it in the background: `python no_more_typo.py&`
 
 ## Use
 Activate fix: [ctrl]+[shift]+[z]
+
 Exit app: [ctrl]+[shift]+[x]              
