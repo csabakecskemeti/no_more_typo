@@ -1,7 +1,7 @@
 # pip install --upgrade pyperclip pynput langchain langchain-openai langchain-community langchain-core
 import pyperclip
 from pynput import keyboard
-from langchain.llms.openai import OpenAI
+from langchain_community.llms.openai import OpenAI
 from langchain_core.prompts import PromptTemplate
 import os
 import warnings
@@ -20,7 +20,7 @@ print("""
 ║▐░▌     ▐░▐░▌▐░█▄▄▄▄▄▄▄█░▌     ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄           ▐░▌          ▐░▌     ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌  ║
 ║▐░▌      ▐░░▌▐░░░░░░░░░░░▌     ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌          ▐░▌          ▐░▌     ▐░▌          ▐░░░░░░░░░░░▌  ║
 ║ ▀        ▀▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀            ▀            ▀       ▀            ▀▀▀▀▀▀▀▀▀▀▀   ║
-║                                                                                                                                              ║     ║                                                                                                                                              ║
+║                                                                                                                                              ║
 ║                                                                                                                                              ║
 ║  Small utility that uses LLM to fix typos and syntax on the text stored                                                                      ║
 ║  in the clipboard.                                                                                                                           ║
