@@ -3,6 +3,7 @@ import pyperclip
 from pynput import keyboard
 from langchain_community.llms.openai import OpenAI
 from langchain_core.prompts import PromptTemplate
+from langchain.chains import LLMChain
 import os
 import warnings
 
@@ -41,29 +42,23 @@ warnings.filterwarnings("ignore")
 llm = OpenAI()
 
 prompt_template = PromptTemplate.from_template(
-    "Fix the text without adding any quotation marks or extra characters. Just respond with the corrected text:\n\n{text}\n\nThe correct string is:"
+    "Fix the syntax and typos text:\n\n{text}\n\nThe correct string is:"
 )
+chain = LLMChain(llm=llm, prompt=prompt_template)
 
 
 def clean_string(text):
     # Strip leading and trailing whitespace
     cleaned_text = text.strip()
-    
     # Strip leading and trailing quotes
     cleaned_text = cleaned_text.strip('"').strip("'")
-    
     return cleaned_text
-
-
-def f(text, llm, prompt_template):
-    prompt = prompt_template.format(text=text)
-    response = llm.invoke(prompt)
-    return clean_string(response)
 
 
 def on_activate():
     original_clipboard_content = pyperclip.paste()
-    processed_content = f(original_clipboard_content, llm, prompt_template)
+    # processed_content = f(original_clipboard_content, llm, prompt_template)
+    processed_content = clean_string(chain.run(original_clipboard_content))
     pyperclip.copy(processed_content)
 
 
