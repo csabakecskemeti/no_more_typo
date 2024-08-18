@@ -1,5 +1,6 @@
 # no_more_typo
-Small utility that uses LLM to fix typos and syntax on the text stored in the clipboard.
+(https://github.com/csabakecskemeti/no_more_typo/blob/main/no_more_typo.jpg)
+Small utility that uses LLM to fix typos and syntax errors in the text stored in the clipboard.
 
 ## Environment
 
