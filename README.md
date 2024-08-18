@@ -1,5 +1,5 @@
 # no_more_typo
-(https://github.com/csabakecskemeti/no_more_typo/blob/main/no_more_typo.jpg)
+!(https://github.com/csabakecskemeti/no_more_typo/blob/main/no_more_typo.jpg)
 Small utility that uses LLM to fix typos and syntax errors in the text stored in the clipboard.
 
 ## Environment
