@@ -5,6 +5,7 @@ from langchain_community.llms.openai import OpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.schema.runnable import RunnableLambda
+import sys
 import os
 import warnings
 
@@ -61,7 +62,7 @@ def on_activate():
 
 def on_exit():
     print("Exit no_more_typo app...")
-    exit()
+    sys.exit(0)
     
 
 with keyboard.GlobalHotKeys(
