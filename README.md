@@ -3,6 +3,11 @@
 
 Small utility that uses LLM to fix typos and syntax errors in the text stored in the clipboard.
 
+## Run executable 
+You can run the code without setting up a pyton environment. 
+To do that use the executable in dist folder.
+You still need the LLM api key (optionally the custom base url) set up in the environment variables.
+
 ## Environment
 
 ### Required packages
