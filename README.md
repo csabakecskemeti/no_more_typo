@@ -2,6 +2,8 @@
 ![logo](https://github.com/csabakecskemeti/no_more_typo/blob/main/no_more_typo.jpg)
 
 Small utility that uses LLM to fix typos and syntax errors in the text stored in the clipboard.
+Executable in the dist folder, created by:
+`pyinstaller --onefile  no_more_typo.py`
 
 ## Run executable 
 You can run the code without setting up a pyton environment. 
@@ -25,3 +27,7 @@ I suggest to run it in the background: `python no_more_typo.py&`
 Activate fix: [ctrl]+[shift]+[z]
 
 Exit app: [ctrl]+[shift]+[x]              
+
+### Custom prompt template
+To use custom prompt template export it to the NO_MORE_TYPO_PROMPT_TEMPLATE environment variable
+    The default value is: "Fix the syntax and typos text:\n{text}\nThe correct string is:"
