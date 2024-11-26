@@ -2,6 +2,8 @@
 ![logo](https://github.com/csabakecskemeti/no_more_typo/blob/main/no_more_typo.jpg)
 
 Small utility that uses LLM to fix typos and syntax errors in the text stored in the clipboard.
+Executable in the dist folder, created by:
+`pyinstaller --onefile  no_more_typo.py`
 
 ## Run executable 
 You can run the code without setting up a pyton environment. 
