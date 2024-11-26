@@ -28,6 +28,8 @@ print("""
 ║  Small utility that uses LLM to fix typos and syntax on the text stored in the clipboard.                                                    ║
 ║                                                                                                                                              ║
 ║  LLM api_key should be available in the OPENAI_API_KEY environment variable.                                                                 ║
+║  To use custom prompt template export it to the NO_MORE_TYPO_PROMPT_TEMPLATE environment variable                                            ║
+║       The default value is: "Fix the syntax and typos text:\n\n{text}\n\nThe correct string is:"                                             ║
 ║                                                                                                                                              ║
 ║  Activate fix: [ctrl]+[shift]+[z]                                                                                                            ║
 ║  Exit app: [ctrl]+[shift]+[x]                                                                                                                ║
@@ -43,9 +45,15 @@ warnings.filterwarnings("ignore")
 
 llm = OpenAI()
 
-prompt = PromptTemplate.from_template(
-    "Fix the syntax and typos text:\n\n{text}\n\nThe correct string is:"
-)
+# Load the prompt template from an environment variable or use the default
+default_prompt = "Fix the syntax and typos text:\n\n{text}\n\nThe correct string is:"
+custom_prompt = os.getenv("NO_MORE_TYPO_PROMPT_TEMPLATE", default_prompt)
+
+# Ensure the template includes "{text}"
+if "{text}" not in custom_prompt:
+    custom_prompt += "\n CONTEXT: \n {text}"
+
+prompt = PromptTemplate.from_template(custom_prompt)
 
 cleanup = RunnableLambda(
     lambda x: x.strip().strip('"').strip("'")
