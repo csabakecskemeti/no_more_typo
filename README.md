@@ -30,4 +30,7 @@ Exit app: [ctrl]+[shift]+[x]
 
 ### Custom prompt template
 To use custom prompt template export it to the NO_MORE_TYPO_PROMPT_TEMPLATE environment variable
+
+like: `export NO_MORE_TYPO_PROMPT_TEMPLATE="Translate this to hungarian::\n\n{text}\n\nThe answer is:"`
+
     The default value is: "Fix the syntax and typos text:\n{text}\nThe correct string is:"
