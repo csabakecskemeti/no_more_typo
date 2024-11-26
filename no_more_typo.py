@@ -29,7 +29,7 @@ print("""
 ║                                                                                                                                              ║
 ║  LLM api_key should be available in the OPENAI_API_KEY environment variable.                                                                 ║
 ║  To use custom prompt template export it to the NO_MORE_TYPO_PROMPT_TEMPLATE environment variable                                            ║
-║       The default value is: "Fix the syntax and typos text:\n\n{text}\n\nThe correct string is:"                                             ║
+║       The default value is: "Fix the syntax and typos text:\\n\\n{text}\\n\\nThe correct string is:"                                         ║
 ║                                                                                                                                              ║
 ║  Activate fix: [ctrl]+[shift]+[z]                                                                                                            ║
 ║  Exit app: [ctrl]+[shift]+[x]                                                                                                                ║
