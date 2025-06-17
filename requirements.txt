@@ -6,3 +6,4 @@ langchain-community
 langchain-core
 pytest
 pytest-mock
+pyinstaller
