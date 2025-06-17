@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an enhanced AI-powered clipboard assistant that uses LLM (OpenAI) for intelligent text processing and transformation. Beyond simple typo fixing, it now supports sophisticated command-based processing for translation, explanation, code completion, and custom text transformations. The application runs as a background service with global hotkeys for activation.
+**ClipIQ** (formerly no_more_typo) is an enhanced AI-powered clipboard assistant that uses LLM (OpenAI) for intelligent text processing and transformation. Beyond simple typo fixing, it now supports sophisticated command-based processing for translation, explanation, code completion, and custom text transformations. The application runs as a background service with global hotkeys for activation.
+
+**Transitional Branding**: The project maintains the "no_more_typo" technical name for backward compatibility while introducing "ClipIQ" as the user-facing brand for intelligent clipboard processing.
 
 ## Architecture
 
