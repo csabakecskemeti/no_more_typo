@@ -8,18 +8,35 @@
 
 ## 🚀 Quick Start
 
-### Download & Run
+### Download & Run (macOS Only)
 ```bash
-# 1. Download the standalone executable
-# 2. Set your OpenAI API key
+# 1. Download the standalone executable (macOS only)
+wget https://github.com/yourusername/no_more_typo/raw/feature/clipiq-rebranding/dist/clipiq
+
+# 2. Make executable
+chmod +x clipiq
+
+# 3. Set your OpenAI API key
 export OPENAI_API_KEY="your-openai-api-key-here"
 
-# 3. Run ClipIQ
+# 4. Run ClipIQ
 ./clipiq
 
-# 4. Use intelligent processing
+# 5. Use intelligent processing
 # Copy text with commands → Press Ctrl+Shift+Z → Get AI-enhanced results
 ```
+
+#### 🔒 macOS Security Settings
+When first running ClipIQ, macOS may block the executable. To allow it:
+
+1. **Try to run ClipIQ** - macOS will show a security warning
+2. **Open System Settings**: Apple menu → System Settings
+3. **Go to Privacy & Security** (scroll down in sidebar if needed)
+4. **Click "Open Anyway"** (appears for ~1 hour after the warning)
+5. **Enter your password** and click OK
+6. **ClipIQ will now run** without further security prompts
+
+> **Note**: This is standard for all unsigned macOS applications. ClipIQ is safe but not code-signed.
 
 ## ✨ What ClipIQ Does
 
@@ -52,13 +69,17 @@ ClipIQ works with **any application**:
 
 ## 🛠️ Installation Options
 
-### Option 1: Standalone Executable (Recommended)
+### Option 1: Standalone Executable (macOS Only)
+- **Platform**: macOS only (Universal binary - Intel + Apple Silicon)
 - **Download**: Single 34MB executable file
 - **Requirements**: macOS + OpenAI API key
 - **Setup Time**: < 2 minutes
 - **Dependencies**: None needed!
+- **Download Link**: [dist/clipiq](https://github.com/yourusername/no_more_typo/raw/feature/clipiq-rebranding/dist/clipiq)
 
-### Option 2: Python Source
+### Option 2: Python Source (Cross-Platform)
+**For Windows, Linux, or if you prefer building from source:**
+
 ```bash
 git clone https://github.com/yourusername/no_more_typo.git
 cd no_more_typo
@@ -67,6 +88,17 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python clipiq.py
 ```
+
+**Supported Platforms**: Windows, macOS, Linux
+
+## 💻 Platform Compatibility
+
+| Platform | Executable | Python Source | Notes |
+|----------|------------|---------------|-------|
+| **macOS** (Intel) | ✅ Ready | ✅ Available | Universal binary included |
+| **macOS** (Apple Silicon) | ✅ Ready | ✅ Available | Universal binary included |
+| **Windows** | ❌ Build from source | ✅ Available | Use Python installation |
+| **Linux** | ❌ Build from source | ✅ Available | Use Python installation |
 
 ## 🎮 Usage
 

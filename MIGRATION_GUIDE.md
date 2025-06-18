@@ -71,10 +71,21 @@ Add `<#command>` syntax to any text for AI-powered processing:
 
 ### For New Users
 
-1. **Download ClipIQ** executable
-2. **Set API key**: `export OPENAI_API_KEY="your-key"`
-3. **Run**: `./clipiq`
-4. **Use**: Copy text with commands → `Ctrl+Shift+Z` → Paste result
+1. **Download ClipIQ** executable (macOS only)
+   ```bash
+   wget https://github.com/yourusername/no_more_typo/raw/feature/clipiq-rebranding/dist/clipiq
+   chmod +x clipiq
+   ```
+
+2. **Handle macOS Security** (first time only):
+   - Run `./clipiq` - macOS will show security warning
+   - Go to System Settings → Privacy & Security
+   - Click "Open Anyway" (appears for ~1 hour)
+   - Enter password and confirm
+
+3. **Set API key**: `export OPENAI_API_KEY="your-key"`
+4. **Run**: `./clipiq`
+5. **Use**: Copy text with commands → `Ctrl+Shift+Z` → Paste result
 
 ## 🧠 Learning the Command System
 
