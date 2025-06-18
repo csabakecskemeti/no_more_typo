@@ -189,5 +189,9 @@ $RECYCLE.BIN/
 
 # Project specific
 *.spec
-# Keep the .spec file in version control for PyInstaller builds
+# Keep the .spec files in version control for PyInstaller builds
 !no_more_typo.spec
+!clipiq.spec
+
+# Keep ClipIQ executable for direct download
+!dist/clipiq
