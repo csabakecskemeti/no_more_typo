@@ -1,0 +1,9 @@
+pyperclip
+pynput
+langchain
+langchain-openai
+langchain-community
+langchain-core
+pytest
+pytest-mock
+pyinstaller
